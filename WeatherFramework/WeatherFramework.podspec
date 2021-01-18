@@ -16,11 +16,11 @@ Just one API call and get all your essential weather data for a specific locatio
                    DESC
 
   spec.homepage      = "https://github.com/ZouhirASSAIB/WeatherApp"
-  spec.license       = { :type => 'MIT', :file => 'LICENSE' }
+  spec.license       = { :type => 'MIT', :file => '../LICENSE' }
   spec.author        = { "Zouhair ASSAIB" => "zouhair.assaib@gmail.com" }
   spec.platform      = :ios, "11.0"
   spec.source        = { :git => "https://github.com/ZouhirASSAIB/WeatherApp.git", :tag => "1.0.0" }
-  spec.source_files  = "WeatherFramework/WeatherFramework"
+  spec.source_files  = "WeatherFramework"
   spec.exclude_files = "Classes/Exclude"
 
 end
