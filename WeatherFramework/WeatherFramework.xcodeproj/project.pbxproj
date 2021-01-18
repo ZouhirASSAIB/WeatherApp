@@ -154,11 +154,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5FE24D5B25B4845F0035C843 /* Build configuration list for PBXNativeTarget "WeatherFramework" */;
 			buildPhases = (
+				5FE24D8425B487DF0035C843 /* Copy Open Weather One Call Sample API key */,
 				5FE24D4225B4845E0035C843 /* Headers */,
 				5FE24D4325B4845E0035C843 /* Sources */,
 				5FE24D4425B4845E0035C843 /* Frameworks */,
 				5FE24D4525B4845E0035C843 /* Resources */,
-				5FE24D8425B487DF0035C843 /* Copy Open Weather One Call Sample API key */,
 			);
 			buildRules = (
 			);
