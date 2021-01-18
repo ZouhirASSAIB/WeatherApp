@@ -19,7 +19,7 @@ A Complete description of WeatherFramework.
   spec.license      = "MIT"
   spec.author       = { "Zouhair ASSAIB" => "zouhair.assaib@gmail.com" }
   spec.platform     = :ios, "11.0"
-  spec.source       = { :git => "https://github.com/ZouhirASSAIB/WeatherApp.git", :tag => "#{1.0.0}" }
+  spec.source       = { :git => "https://github.com/ZouhirASSAIB/WeatherApp.git", :tag => "1.0.0" }
   spec.source_files  = "WeatherFramework"
   spec.exclude_files = "Classes/Exclude"
 
