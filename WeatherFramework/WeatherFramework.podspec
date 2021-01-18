@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |spec|
 
-  spec.name         = "WeatherFramework"
+  spec.name         = "WeatherApp"
   spec.version      = "1.0.0"
   spec.summary      = "A short description of WeatherFramework."
   spec.description  = <<-DESC
