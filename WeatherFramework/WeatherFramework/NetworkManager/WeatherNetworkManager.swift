@@ -7,9 +7,9 @@
 
 import Foundation
 
-class WeatherNetworkManager : NetworkManagerProtocol {
+public class WeatherNetworkManager : NetworkManagerProtocol {
     
-    static let shared = WeatherNetworkManager()
+    public static let shared = WeatherNetworkManager()
     
     private let urlSession = URLSession.shared
     
@@ -21,7 +21,7 @@ class WeatherNetworkManager : NetworkManagerProtocol {
         return urlComponents
     }
     
-    func fetchCurrentWeatherData(lat: String,
+    public func fetchCurrentWeatherData(lat: String,
                                  lon: String,
                                  completion: @escaping(WeatherModel?, HTTPURLResponse?, Error?) -> Void) {
         self.fetchCurrentWeather (parameters: [
