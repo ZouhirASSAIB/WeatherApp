@@ -9,7 +9,7 @@ import XCTest
 @testable import WeatherFramework
 
 class WeatherFrameworkTests: XCTestCase {
-
+    
     var weatherNetworkManager: WeatherNetworkManager!
     
     override func setUpWithError() throws {
@@ -26,11 +26,13 @@ class WeatherFrameworkTests: XCTestCase {
         
         let lat = "48.117268"
         let lon = "-1.677793"
+        let weatherApiKey = "INSERT YOUR API KEY HERE"
         
         let promise = expectation(description: "Status code: 200")
         
         self.weatherNetworkManager.fetchCurrentWeatherData(lat: lat,
-                                                           lon: lon) { (weatherModel, response, error) in
+                                                           lon: lon,
+                                                           weatherApiKey: weatherApiKey) { (weatherModel, response, error) in
             
             if let error = error {
                 XCTFail("Error: \(error.localizedDescription)")
