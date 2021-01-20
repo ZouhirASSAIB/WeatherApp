@@ -6,14 +6,12 @@
 //
 
 import Foundation
-import Keys
 
 public class WeatherNetworkManager : NetworkManagerProtocol {
     
     public static let shared = WeatherNetworkManager()
     
     private let urlSession = URLSession.shared
-    private let keys = WeatherFrameworkKeys()
     
     var urlComponents: URLComponents {
         var urlComponents = URLComponents()
@@ -25,11 +23,12 @@ public class WeatherNetworkManager : NetworkManagerProtocol {
     
     public func fetchCurrentWeatherData(lat: String,
                                         lon: String,
+                                        weatherApiKey: String,
                                         completion: @escaping(WeatherModel?, HTTPURLResponse?, Error?) -> Void) {
         self.fetchCurrentWeather (parameters: [
             "lat":lat,
             "lon":lon,
-            "appid":keys.weatherApiKey
+            "appid":weatherApiKey
         ], completion: completion)
     }
     
