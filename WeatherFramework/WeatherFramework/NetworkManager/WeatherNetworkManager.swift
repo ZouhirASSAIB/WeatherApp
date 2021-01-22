@@ -23,11 +23,21 @@ public class WeatherNetworkManager : NetworkManagerProtocol {
     
     public func fetchCurrentWeatherData(lat: String,
                                         lon: String,
+                                        units: WeatherUnits,
+                                        lang: String,
+                                        exclude: [WeatherExclude],
                                         weatherApiKey: String,
                                         completion: @escaping(WeatherModel?, HTTPURLResponse?, Error?) -> Void) {
+        
+        
+        let excludeValues: [String] = exclude.map { $0.rawValue }
+    
         self.fetchCurrentWeather (parameters: [
             "lat":lat,
             "lon":lon,
+            "units":units.rawValue,
+            "lang":lang,
+            "exclude":excludeValues.joined(separator: ", "),
             "appid":weatherApiKey
         ], completion: completion)
     }

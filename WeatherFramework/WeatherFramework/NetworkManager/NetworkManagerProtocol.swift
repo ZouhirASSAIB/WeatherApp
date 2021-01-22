@@ -11,6 +11,9 @@ protocol NetworkManagerProtocol {
     
     func fetchCurrentWeatherData(lat: String,
                                  lon: String,
+                                 units: WeatherUnits,
+                                 lang: String,
+                                 exclude: [WeatherExclude],
                                  weatherApiKey: String,
                                  completion: @escaping(WeatherModel?, HTTPURLResponse?, Error?) -> ())
 }

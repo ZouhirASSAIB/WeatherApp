@@ -7,9 +7,22 @@
 
 import Foundation
 
-struct Weather: Codable {
-    let id: Int
-    let main: String
-    let description: String
-    let icon: String
+public enum WeatherUnits: String {
+    case metric
+    case imperial
+}
+
+public enum WeatherExclude: String {
+    case current
+    case minutely
+    case hourly
+    case daily
+    case alerts
+}
+
+public struct Weather: Codable {
+    public let id: Int
+    public let main: String
+    public let description: String
+    public let icon: String
 }

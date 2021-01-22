@@ -32,6 +32,9 @@ class WeatherFrameworkTests: XCTestCase {
         
         self.weatherNetworkManager.fetchCurrentWeatherData(lat: lat,
                                                            lon: lon,
+                                                           units: .metric,
+                                                           lang: "fr",
+                                                           exclude: [.minutely, .daily, .alerts],
                                                            weatherApiKey: weatherApiKey) { (weatherModel, response, error) in
             
             if let error = error {
