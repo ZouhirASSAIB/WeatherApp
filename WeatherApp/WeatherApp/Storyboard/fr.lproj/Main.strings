@@ -1,0 +1,24 @@
+
+/* Class = "UILabel"; text = "Humidity"; ObjectID = "178-w5-C0X"; */
+"178-w5-C0X.text" = "Humidité";
+
+/* Class = "UILabel"; text = "Feels like"; ObjectID = "50r-OP-rsV"; */
+"50r-OP-rsV.text" = "Ressenti";
+
+/* Class = "UILabel"; text = "Visibility"; ObjectID = "9M1-7c-EOA"; */
+"9M1-7c-EOA.text" = "Visibilité";
+
+/* Class = "UILabel"; text = "Sunset"; ObjectID = "KpV-Sr-YJn"; */
+"KpV-Sr-YJn.text" = "Coucher du soleil";
+
+/* Class = "UILabel"; text = "Wind Speed"; ObjectID = "RoE-AW-Jfe"; */
+"RoE-AW-Jfe.text" = "Vitesse du vent";
+
+/* Class = "UILabel"; text = "Pressure"; ObjectID = "W5d-nl-4bH"; */
+"W5d-nl-4bH.text" = "Pression";
+
+/* Class = "UILabel"; text = "Sunrise"; ObjectID = "oVq-gl-PH3"; */
+"oVq-gl-PH3.text" = "Lever du soleil";
+
+/* Class = "UILabel"; text = "UV Indice"; ObjectID = "xdW-kg-hmY"; */
+"xdW-kg-hmY.text" = "Indice UV";

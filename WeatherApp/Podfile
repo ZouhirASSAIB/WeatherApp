@@ -1,0 +1,25 @@
+platform :ios, '11.0'
+
+target 'WeatherApp' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  plugin 'cocoapods-keys',
+       project: 'WeatherApp',
+       keys: [
+         'WheatherApiKey',      # Auth for the OpenWheather OneCall API
+       ]
+
+  # Pods for WeatherApp
+  pod 'WeatherFrameworkApp', '1.0.4'
+
+  target 'WeatherAppTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'WeatherAppUITests' do
+    # Pods for testing
+  end
+
+end
