@@ -8,6 +8,7 @@
 import Foundation
 
 public struct WeatherModel: Codable {
-    let timezone: String
-    let current: CurrentWeather
+    public let timezone: String
+    public let current: CurrentWeather
+    public let hourly: [CurrentWeather]
 }
