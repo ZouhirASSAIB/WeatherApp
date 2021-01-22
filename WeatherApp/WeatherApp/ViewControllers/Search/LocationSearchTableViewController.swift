@@ -10,55 +10,67 @@ import MapKit
 
 class LocationSearchTableViewController: UITableViewController {
     
+    // MARK: - Variables
     private var matchingItems:[MKMapItem] = []
-    private var selectedItemCoordinate:CLLocationCoordinate2D? = nil
+    private var selectedItem:MKMapItem? = nil
     
+    // MARK: - View life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.tableView.tableFooterView = UIView()
     }
     
-    // MARK: - Table view data source
+    // MARK: - Navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the LocationDetailViewController using segue.destination.
+        // Pass the selected item to the LocationDetailViewController.
+        if segue.identifier == "showSearchedLocationDetailSegue",
+           let navigationController = segue.destination as? UINavigationController,
+           let locationDetailViewController = navigationController.topViewController as? LocationDetailViewController {
+            navigationController.isToolbarHidden = true
+            locationDetailViewController.selectedItem = self.selectedItem
+        }
+    }
+}
+
+// MARK: - Table view data source
+extension LocationSearchTableViewController {
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.matchingItems.count
     }
-    
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "searchResultCell", for: indexPath)
         
         // Configure the cell...
         let selectedItem = matchingItems[indexPath.row].placemark
+        
         cell.textLabel?.text = selectedItem.name
+        
         let address = "\(selectedItem.locality ?? "") \(selectedItem.administrativeArea ?? "") \(selectedItem.country ?? "")"
         cell.detailTextLabel?.text = address.trimmingCharacters(in: .whitespacesAndNewlines)
+        
         return cell
     }
     
-    // MARK: - Table view delegate
+}
+
+// MARK: - Table view delegate
+extension LocationSearchTableViewController {
+    
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        self.selectedItemCoordinate = matchingItems[indexPath.row].placemark.coordinate
-        self.performSegue(withIdentifier: "showLocationDetailSegue", sender: self)
-    }
-    
-    // MARK: - Navigation
-    
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-        if segue.identifier == "showLocationDetailSegue",
-           let locationDetailViewController = segue.destination as? LocationDetailViewController {
-            locationDetailViewController.selectedItemCoordinate = self.selectedItemCoordinate
-        }
-        
+        // Getiing the selected location and navigate to detail screen in order to display this location detail informations
+        self.selectedItem = matchingItems[indexPath.row]
+        self.performSegue(withIdentifier: "showSearchedLocationDetailSegue", sender: self)
     }
 }
 
+// MARK: - UISearchResultsUpdating
 extension LocationSearchTableViewController: UISearchResultsUpdating {
     
+    // start a search request and refresh tableView to display results
     func filterMapItemsForSearchQuery(_ searchQuery: String) {
         let searchRequest = MKLocalSearch.Request()
         searchRequest.naturalLanguageQuery = searchQuery
@@ -75,6 +87,7 @@ extension LocationSearchTableViewController: UISearchResultsUpdating {
         }
     }
     
+    // Update our search results
     func updateSearchResults(for searchController: UISearchController) {
         guard let searchQuery = searchController.searchBar.text else { return }
         self.filterMapItemsForSearchQuery(searchQuery)

@@ -8,11 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		545D2443A86119A761191753 /* Pods_WeatherApp_WeatherAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB676FC42EC30795C6A36E39 /* Pods_WeatherApp_WeatherAppUITests.framework */; };
+		5F38D70A25B9C4EE0060988F /* LocationsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F38D70925B9C4EE0060988F /* LocationsTableViewController.swift */; };
+		5F38D71025B9C68F0060988F /* LocationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F38D70E25B9C68F0060988F /* LocationTableViewCell.swift */; };
+		5F38D71125B9C68F0060988F /* LocationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F38D70F25B9C68F0060988F /* LocationTableViewCell.xib */; };
 		5F5E064425B8660400180AD3 /* LocationSearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5E064325B8660400180AD3 /* LocationSearchTableViewController.swift */; };
 		5F5E064925B8952A00180AD3 /* LocationDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5E064825B8952A00180AD3 /* LocationDetailViewController.swift */; };
+		5F666AA625B9DDDC001C1DCF /* CustomUILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F666AA525B9DDDC001C1DCF /* CustomUILabel.swift */; };
+		5F666ACA25BA4980001C1DCF /* HourlyWeatherCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F666AC825BA4980001C1DCF /* HourlyWeatherCollectionViewCell.swift */; };
+		5F666ACB25BA4980001C1DCF /* HourlyWeatherCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F666AC925BA4980001C1DCF /* HourlyWeatherCollectionViewCell.xib */; };
 		5FE24E0925B5F7B90035C843 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE24E0825B5F7B90035C843 /* AppDelegate.swift */; };
 		5FE24E0B25B5F7B90035C843 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE24E0A25B5F7B90035C843 /* SceneDelegate.swift */; };
-		5FE24E0D25B5F7B90035C843 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE24E0C25B5F7B90035C843 /* ViewController.swift */; };
 		5FE24E1025B5F7B90035C843 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FE24E0E25B5F7B90035C843 /* Main.storyboard */; };
 		5FE24E1225B5F7BA0035C843 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5FE24E1125B5F7BA0035C843 /* Assets.xcassets */; };
 		5FE24E1525B5F7BA0035C843 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FE24E1325B5F7BA0035C843 /* LaunchScreen.storyboard */; };
@@ -45,12 +50,19 @@
 		417617EEEC5A000FA4B86AF8 /* Pods-WeatherApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeatherApp.release.xcconfig"; path = "Target Support Files/Pods-WeatherApp/Pods-WeatherApp.release.xcconfig"; sourceTree = "<group>"; };
 		454BCED5AF2BC5DE9BCB7046 /* Pods-WeatherApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeatherApp.debug.xcconfig"; path = "Target Support Files/Pods-WeatherApp/Pods-WeatherApp.debug.xcconfig"; sourceTree = "<group>"; };
 		4AAEBDE6A4ACFA3372CC9E84 /* Pods-WeatherAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeatherAppTests.debug.xcconfig"; path = "Target Support Files/Pods-WeatherAppTests/Pods-WeatherAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5F38D70425B9A0780060988F /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Main.strings; sourceTree = "<group>"; };
+		5F38D70525B9A0780060988F /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		5F38D70925B9C4EE0060988F /* LocationsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsTableViewController.swift; sourceTree = "<group>"; };
+		5F38D70E25B9C68F0060988F /* LocationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationTableViewCell.swift; sourceTree = "<group>"; };
+		5F38D70F25B9C68F0060988F /* LocationTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LocationTableViewCell.xib; sourceTree = "<group>"; };
 		5F5E064325B8660400180AD3 /* LocationSearchTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSearchTableViewController.swift; sourceTree = "<group>"; };
 		5F5E064825B8952A00180AD3 /* LocationDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDetailViewController.swift; sourceTree = "<group>"; };
+		5F666AA525B9DDDC001C1DCF /* CustomUILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomUILabel.swift; sourceTree = "<group>"; };
+		5F666AC825BA4980001C1DCF /* HourlyWeatherCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourlyWeatherCollectionViewCell.swift; sourceTree = "<group>"; };
+		5F666AC925BA4980001C1DCF /* HourlyWeatherCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HourlyWeatherCollectionViewCell.xib; sourceTree = "<group>"; };
 		5FE24E0525B5F7B90035C843 /* WeatherApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FE24E0825B5F7B90035C843 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5FE24E0A25B5F7B90035C843 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		5FE24E0C25B5F7B90035C843 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5FE24E0F25B5F7B90035C843 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5FE24E1125B5F7BA0035C843 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5FE24E1425B5F7BA0035C843 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -95,6 +107,85 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5F666AAA25B9DE71001C1DCF /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				5F666AA525B9DDDC001C1DCF /* CustomUILabel.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		5F666AB125B9DEDC001C1DCF /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				5F666ABF25BA3B8F001C1DCF /* List */,
+				5F666AC025BA3BAB001C1DCF /* Search */,
+				5F666AC425BA3BB4001C1DCF /* Detail */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		5F666AB525B9DEE9001C1DCF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5F38D70E25B9C68F0060988F /* LocationTableViewCell.swift */,
+				5F38D70F25B9C68F0060988F /* LocationTableViewCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5F666ABF25BA3B8F001C1DCF /* List */ = {
+			isa = PBXGroup;
+			children = (
+				5F38D70925B9C4EE0060988F /* LocationsTableViewController.swift */,
+				5F666AB525B9DEE9001C1DCF /* Views */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		5F666AC025BA3BAB001C1DCF /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				5F5E064325B8660400180AD3 /* LocationSearchTableViewController.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		5F666AC425BA3BB4001C1DCF /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				5F5E064825B8952A00180AD3 /* LocationDetailViewController.swift */,
+				5F666ACF25BA4986001C1DCF /* Views */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		5F666ACF25BA4986001C1DCF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5F666AC825BA4980001C1DCF /* HourlyWeatherCollectionViewCell.swift */,
+				5F666AC925BA4980001C1DCF /* HourlyWeatherCollectionViewCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5FBEA44A25BA6A38002AA7A8 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				5FE24E0E25B5F7B90035C843 /* Main.storyboard */,
+				5FE24E1325B5F7BA0035C843 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		5FBEA44B25BA6A53002AA7A8 /* Ressources */ = {
+			isa = PBXGroup;
+			children = (
+				5FE24E1125B5F7BA0035C843 /* Assets.xcassets */,
+			);
+			path = Ressources;
+			sourceTree = "<group>";
+		};
 		5FE24DFC25B5F7B90035C843 = {
 			isa = PBXGroup;
 			children = (
@@ -120,15 +211,13 @@
 		5FE24E0725B5F7B90035C843 /* WeatherApp */ = {
 			isa = PBXGroup;
 			children = (
+				5F666AAA25B9DE71001C1DCF /* Extension */,
+				5FBEA44A25BA6A38002AA7A8 /* Storyboard */,
+				5F666AB125B9DEDC001C1DCF /* ViewControllers */,
+				5FBEA44B25BA6A53002AA7A8 /* Ressources */,
 				5FE24E0825B5F7B90035C843 /* AppDelegate.swift */,
 				5FE24E0A25B5F7B90035C843 /* SceneDelegate.swift */,
-				5FE24E0C25B5F7B90035C843 /* ViewController.swift */,
-				5FE24E0E25B5F7B90035C843 /* Main.storyboard */,
-				5FE24E1125B5F7BA0035C843 /* Assets.xcassets */,
-				5FE24E1325B5F7BA0035C843 /* LaunchScreen.storyboard */,
 				5FE24E1625B5F7BA0035C843 /* Info.plist */,
-				5F5E064325B8660400180AD3 /* LocationSearchTableViewController.swift */,
-				5F5E064825B8952A00180AD3 /* LocationDetailViewController.swift */,
 			);
 			path = WeatherApp;
 			sourceTree = "<group>";
@@ -264,6 +353,7 @@
 			knownRegions = (
 				en,
 				Base,
+				fr,
 			);
 			mainGroup = 5FE24DFC25B5F7B90035C843;
 			productRefGroup = 5FE24E0625B5F7B90035C843 /* Products */;
@@ -282,8 +372,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F666ACB25BA4980001C1DCF /* HourlyWeatherCollectionViewCell.xib in Resources */,
 				5FE24E1525B5F7BA0035C843 /* LaunchScreen.storyboard in Resources */,
 				5FE24E1225B5F7BA0035C843 /* Assets.xcassets in Resources */,
+				5F38D71125B9C68F0060988F /* LocationTableViewCell.xib in Resources */,
 				5FE24E1025B5F7B90035C843 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -413,8 +505,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				5F5E064425B8660400180AD3 /* LocationSearchTableViewController.swift in Sources */,
-				5FE24E0D25B5F7B90035C843 /* ViewController.swift in Sources */,
+				5F38D71025B9C68F0060988F /* LocationTableViewCell.swift in Sources */,
+				5F666ACA25BA4980001C1DCF /* HourlyWeatherCollectionViewCell.swift in Sources */,
+				5F38D70A25B9C4EE0060988F /* LocationsTableViewController.swift in Sources */,
 				5FE24E0925B5F7B90035C843 /* AppDelegate.swift in Sources */,
+				5F666AA625B9DDDC001C1DCF /* CustomUILabel.swift in Sources */,
 				5FE24E0B25B5F7B90035C843 /* SceneDelegate.swift in Sources */,
 				5F5E064925B8952A00180AD3 /* LocationDetailViewController.swift in Sources */,
 			);
@@ -456,6 +551,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				5FE24E0F25B5F7B90035C843 /* Base */,
+				5F38D70425B9A0780060988F /* fr */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -464,6 +560,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				5FE24E1425B5F7BA0035C843 /* Base */,
+				5F38D70525B9A0780060988F /* fr */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -475,6 +572,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -536,6 +634,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
