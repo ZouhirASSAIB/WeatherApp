@@ -11,7 +11,7 @@ target 'WeatherApp' do
        ]
 
   # Pods for WeatherApp
-  pod 'WeatherFrameworkApp', '1.0.4'
+  pod 'WeatherFrameworkApp', '1.0.5'
 
   target 'WeatherAppTests' do
     inherit! :search_paths
